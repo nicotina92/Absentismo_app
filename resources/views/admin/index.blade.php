@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.sidebar')
 
-@section('content')
+
+@section('admin-content')
 
 <h3>VISTA DEL ADMINISTRADOR</h3>
 

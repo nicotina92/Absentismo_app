@@ -22,6 +22,9 @@
         .cabecera img{
             /*height:100px;*/
         }
+        .cabecera{
+            background-color:#F1F1F1;
+        }
     </style>
 </head>
 <body>
@@ -70,7 +73,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a href="" class="dropdown-item">Configuración</a>
+                                    <a href="{{route('AdminConfig') }}" class="dropdown-item">Configuración</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -87,8 +90,8 @@
                 </div>
             </div>
         </nav>
-        <div class="container cabecera pt-2">
-            <div class="row d-flex justify-content-between">
+        <div class="cabecera pt-2">
+            <div class="row d-flex justify-content-around">
                 <div class="col-s3 col-3 d-flex align-items-center">
                     <img src="https://tellevamosalagloria.com/wp-content/uploads/2018/09/en-la-gloria-sticky-logo.png" alt="LOGO" class="img-fluid">    
                 </div>
@@ -101,7 +104,12 @@
             </div>
         </div>
         <main class="py-4">
+            <div class="row">
+                
+            </div>
             @yield('content')
+
+
         </main>
     </div>
 </body>

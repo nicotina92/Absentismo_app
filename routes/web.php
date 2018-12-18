@@ -25,6 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //RUTAS ADMIN
 Route::get('/admin/index','AdminController@index')->name('AdminHome');
 Route::get('/admin/administrar','AdminController@administrar')->name('AdministrarUsers');
+Route::get('/admin/config', 'EventCalendar@index')->name('AdminConfig');
 
 //RUTAS USER
 
